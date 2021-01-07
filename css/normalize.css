@@ -6,6 +6,36 @@
  *    user zoom.
  */
 
+#movetxta {
+    -webkit-animation: movinga 2s;
+    animation: movinga 2s;
+}
+		
+@-webkit-keyframes movinga {
+    from {-webkit-transform: translateX(100px);}
+    to {-webkit-transform: translateX(0px);}
+}
+
+@keyframes movinga {
+    from {transform: translateX(100px);}
+    to {transform: translateX(0px);}
+}
+
+#movetxtb {
+  -webkit-animation: movingb 2s;
+  animation: movingb 2s;
+}
+  
+@-webkit-keyframes movingb {
+  from {-webkit-transform: translateX(-100px);}
+  to {-webkit-transform: translateX(0px);}
+}
+
+@keyframes movingb {
+  from {transform: translateX(-100px);}
+  to {transform: translateX(0px);}
+}
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
